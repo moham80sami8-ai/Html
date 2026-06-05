@@ -1,0 +1,477 @@
+.social-icons_nav{
+    position: relative;
+    top: -8px;
+    left: -335px;
+    display: flex;
+    gap: 10px;
+    
+}
+.social-icons_nav a {
+    border:2px solid palevioletred;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: #e473ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons_nav a:hover {
+    background-color:  #e473ac;
+    color: white;
+    transform: translateY(-5px);
+}
+.social-icons {
+   
+    position: relative;
+     top: 430px;;
+    left: 1100px;
+    display: flex;
+    gap: 100px;
+}
+
+.social-icons a {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: #e473ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color:  #e473ac;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+#boy {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    top: 150px;
+    left: 41vw;
+}
+
+
+#without_underline {
+    position: fixed;
+    display: flex;
+    text-decoration: none;
+
+}
+
+#firstlineinthepage {
+    border-left: 1px solid rgba(0, 0, 0, 0.477);
+    color: rgba(0, 0, 0, 0.668);
+    padding-left: 30px;
+}
+
+
+#AW {
+
+    font-size: 128px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e473ac;
+    padding-top: 10PX;
+        padding-right: 2200PX;
+
+}
+
+#sec2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.p1 {
+    text-align: center;
+
+    font-size: 35px;
+    color: #0000008f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#EventsWithMespan{
+
+    top: 530px;
+    padding-bottom: 910px;
+    justify-content: space-between;
+    padding-left: 1150px;
+    padding-top: 200px;
+    padding-right: 1150px;
+    position: relative;
+    background-color: #dee2e66b;
+    border: 4px solid #dee2e66b;
+    border-radius: 30px;
+    text-align: end;
+    margin-left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Achievementsspan{
+top: 530px;
+    padding-bottom: 400px;
+    justify-content: space-between;
+    padding-left: 1000px;
+    padding-top: 200px;
+    padding-right: 1000px;
+    position: relative;
+    background-color: #e473ac;
+    border: 4px solid #a3144b;
+    border-radius: 30px;
+    text-align: end;
+       margin-left: 179px;
+    color: white;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+#Achievements_cards{
+        margin-bottom: 505px;
+        margin-top: 75px;
+     display: flex;
+    color: rgba(0, 0, 0, 0.668);
+    justify-content: center;
+    gap: 80px;
+}
+
+
+
+
+
+#skillsspan {
+    top: 530px;
+    padding-bottom: 200px;
+    justify-content: space-between;
+    padding-left: 1000px;
+    padding-top: 200px;
+    padding-right: 1000px;
+    position: relative;
+    
+    background-color: #e473ac;
+    border: 4px solid #a3144b;
+    border-radius: 30px;
+    text-align: end;
+    margin: 14vw;
+    color: white;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#cards {
+    display: flex;
+    color: rgba(0, 0, 0, 0.668);
+    justify-content: center;
+    gap: 200px;
+
+}
+
+#card1 {
+    position: relative;
+    z-index: 9;
+    top: 530px;
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    height: 900px;
+    font-size: 18px;
+    border:  #a3144b solid;
+    border-radius: 30px;
+}
+
+#card2 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+    height: 900px;
+    border:  #a3144b solid;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#card3 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+    border: #a3144b solid;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    height: 900px;
+    font-size: 18px;
+}
+
+#card11 {
+    position: relative;
+    z-index: 9;
+    top: 530px;
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    height: 700px;
+    font-size: 18px;
+    border:  #a3144b solid;
+    border-radius: 30px;
+}
+
+#card22 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+     height: 700px;
+    border: #a3144b solid;
+    border-radius: 30px;
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#card33 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+    border:  #a3144b solid;
+    border-radius: 30px;
+    width: 600px;
+    text-align: center;
+  height: 700px;
+    font-size: 18px;
+}
+
+#card44 {
+    position: relative;
+    z-index: 9;
+    top: 530px;
+    background-color: white;
+    width: 600px;
+    text-align: center;
+     height: 700px;
+    font-size: 18px;
+    border:  #a3144b solid;
+    border-radius: 30px;
+}
+.colored {
+    color: #e473ac;
+}
+
+.cardtitle {
+    color: #000;
+    font-size: 56px;
+}
+
+.Achievementsimg{
+
+ height: 250px;
+    left: 35%;
+    top: 0%;
+
+}
+.skillsimg {
+    height: 66px;
+    left: 35%;
+    top: 0%;
+
+}
+.Attendbutton:hover{
+   background-color:#e473ac; 
+}
+.Attendbutton {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 30px;
+    position: relative;
+    color: white;
+    background-color: #e473ac;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    border: 1px;
+    border-radius: 6px;
+    top: -6px;
+    left: -3px;
+    padding-left: 30px;
+    transition: background-color 1s;
+}
+.CVbutton {
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 100px;
+    position: relative;
+    color: white;
+    background-color: #e473ac;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    border: 1px;
+    border-radius: 6px;
+    top: 610px;
+    left: 1346px;
+    padding-left: 100px;
+}
+
+#firstpicfirstrow {
+    position: relative;
+    border: 10px;
+    border-radius: 30px;
+    width: 1000px;
+    height: 700px;
+    left: 514px;
+    top: 505px;
+}
+
+#secondpicfirstrow {
+    position: relative;
+    text-align: center;
+  border-top: 3px solid #00000041;
+    border-right: 3px solid #00000041;
+    border-left: 3px solid #00000041;
+   border-bottom:10px solid #ffc107;
+    border-radius: 30px;
+    width: 1000px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    left: -64px;
+    top: 505px;
+    background-color: #ffffff;
+
+}
+
+#firstpicsecondrow {
+
+    top: 555px;
+    position: relative;
+    border: 10px;
+    border-radius: 30px;
+    width: 1000px;
+    height: 700px;
+    left: 514px;
+}
+
+#secondpicsecondrow {
+    position: relative;
+    top: 555px;
+    text-align: center;
+    border-top: 3px solid #00000041;
+    border-right: 3px solid #00000041;
+    border-left: 3px solid #00000041;
+   border-bottom:10px solid #165bfb;
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: 1000px;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    left: -64px;
+}
+
+#firstpic3row {
+    top: 605px;
+    width: 1000px;
+    height: 700px;
+    left: 514px;
+    position: relative;
+    border: 10px;
+    border-radius: 30px;
+
+}
+
+#secondpic3row {
+    top: 605px;
+    text-align: center;
+    border-top: 3px solid #00000041;
+    border-right: 3px solid #00000041;
+    border-left: 3px solid #00000041;
+   border-bottom: 10px solid #dc3545;
+    border-radius: 30px;
+    position: relative;
+    background-color: #ffffff;
+    width: 1000px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    left: -64px;
+}
+
+.container {
+    display: flex;
+    background-color:  #e473ac;
+    padding: 10px;
+}
+
+.secondrow,
+.firstrow,
+.thirdrow {
+    gap: 633px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 425PX) {
+
+    /* body {
+          background-color: #cce5ff;
+        } */
+    section {}
+}
