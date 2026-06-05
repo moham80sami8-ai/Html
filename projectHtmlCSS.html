@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohmmad sami_Project</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<style>
+
+body{
+    background-image:url("background.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-color:#ffffff;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-weight:bold;
+    font-size:28px;
+    color:#4A6CF7;
+}
+.nav-link{
+    color:#333;
+    font-weight:500;
+    margin-right:15px;
+}
+.social-link{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:35px;
+    height:35px;
+    border:1.5px solid #4A6CF7;
+    border-radius:50%;
+    color:#4A6CF7;
+    text-decoration:none;
+    margin-left:10px;
+    transition:0.3s;
+    font-size:14px;
+}
+.social-link:hover{
+    background:#4A6CF7;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;  
+    color: #2D2E32;  
+}
+.hero p{
+    color:#666;
+    font-size: larger;
+    max-width:800px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgp{
+    width:300px;
+    height:300px;
+}
+
+/* Skills */
+.purple-bg { 
+    background: #2a34e7; 
+    padding: 80px 0 150px; 
+    text-align: center; 
+    color: white; 
+}
+.cards-container { margin-top: -100px; }
+.skill-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: 0.3s;
+}
+.skill-card:hover { transform: translateY(-10px); }
+.icon { font-size: 3rem; color: #0d6efd; margin-bottom: 20px; }
+.purple-text { color: #4b30e5; font-weight: 600; margin-top: 20px; display: block; }
+
+/* Projects */
+.projects-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.project-row {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    margin-bottom: 2px;
+    width: 100%;
+    gap: 20px;
+}
+.project-visual, .project-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.project-visual img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+.project-details {
+    padding: 60px;
+    background-color: #ffffff;
+}
+.project-details h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.project-details p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.project-link {
+    color: #4B30E5;
+}
+
+/* Experience */
+.experience-wrapper {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.main-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2D2E32;
+    margin-bottom: 80px;
+}
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 50px;
+}
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+}
+.circle-year {
+    min-width: 110px;
+    height: 110px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+.details h3 {
+    color: #4B30E5;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.details p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Achievements */
+.achievements-header {
+    background-color: #4B30E5;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 100px 0 180px;
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+}
+.achievements-header h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: -120px auto 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+.achievement-card {
+    background: white;
+    flex: 1;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    color: #333;
+}
+.achievement-card i {
+    font-size: 3rem;
+    color: #4B30E5;
+    margin-bottom: 20px;
+    display: block;
+}
+.achievement-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.achievement-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Events */
+.events-section {
+    padding: 100px 0;
+    background-color: #fcfcfc;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    overflow-x: hidden;
+}
+.events-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2D2E32;
+}
+.events-header p {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    color: #666;
+    line-height: 1.8;
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.event-card {
+    background: white;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.event-card:hover {
+    transform: translateY(-10px);
+}
+.event-type {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.event-card h3 { font-size: 1.6rem; margin-bottom: 15px; color: #2D2E32; }
+.event-date { color: #4B30E5; font-weight: 700; font-size: 1.2rem; margin-bottom: 20px; }
+.event-location { color: #777; font-size: 1rem; line-height: 1.6; margin-bottom: 30px; }
+.btn-attend { background-color: #4361ee; color: white; padding: 12px 30px; border-radius: 10px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3); transition: 0.3s; }
+.btn-attend:hover { background-color: #314cc6; box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4); }
+
+/* Testimonials */
+.testimonials-section { max-width: 1000px; margin: 100px auto; padding: 0 20px; font-family: 'Poppins', sans-serif; }
+.testimonial-item { display: flex; align-items: center; margin-bottom: 40px; gap: 40px; }
+.user-info { flex: 0 0 200px; text-align: center; }
+.user-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
+.user-name { color: #4B30E5; font-weight: 700; margin-bottom: 5px; }
+.user-role { color: #888; font-size: 0.9rem; }
+.speech-bubble { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); position: relative; flex: 1; }
+.speech-bubble p { font-style: italic; color: #666; line-height: 1.8; font-size: 1.05rem; }
+
+/* Contact & Footer */
+.contact-footer{ background: linear-gradient(135deg,#7b2ff7,#5a1fd4); padding-top:150px; width:100vw; margin-left:calc(-50vw + 50%); }
+.contact-wrapper{ max-width:1100px; margin:auto; display:flex; gap:30px; margin-top:-120px; padding:0 20px; }
+.contact-left, .contact-right{ background:white; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.1); }
+.contact-left{ flex:2; padding:60px; }
+.contact-left h2{ font-size:50px; margin-bottom:20px; }
+.contact-left p{ font-size:18px; color:#666; }
+.contact-right{ flex:1; padding:40px; display:flex; flex-direction:column; gap:20px; }
+.contact-right input{ padding:15px; border:none; background:#eee; border-radius:8px; }
+.contact-right button{ background:#4A6CF7; color:white; border:none; padding:15px; border-radius:8px; font-weight:600; cursor:pointer; }
+.contact-right button:hover{ background:#3b5be0; }
+.purple-footer{ padding:80px 20px; text-align:center; color:white; }
+.footer-name{ font-size:40px; margin-bottom:25px; }
+.footer-links{ display:flex; justify-content:center; gap:30px; margin-bottom:30px; flex-wrap:wrap; }
+.footer-links a{ color:white; text-decoration:none; }
+.social-icons{ display:flex; justify-content:center; gap:10px; }
+.social-icons a{ width:40px; height:40px; border:1px solid white; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; text-decoration:none; }
+.footer-copyright{ margin-top: 40px; padding-top: 20px; font-size: 0.85rem; opacity: 0.6; }
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 425px) {
+    /* Navbar */
+    .navbar-nav { flex-direction: column; gap: 15px; text-align:center; }
+    .nav-item.d-flex { justify-content:center; margin-top:10px; }
+
+    /* Hero */
+    .hero { padding:40px 20px; flex-direction: column; text-align:center; }
+    .hero p { font-size:1rem; line-height:1.5; }
+    .name { font-size:32px; margin-bottom:15px; }
+    .imgp { width:200px; height:200px; margin-top:20px; }
+
+    /* Skills */
+    .cards-container .row { flex-direction: column; gap:20px; }
+    .skill-card { padding:30px 20px; }
+
+    /* Projects */
+    .project-row, .project-row.flex-reverse { flex-direction: column; min-height:auto; text-align:center; }
+    .project-visual, .project-details { padding:20px; width:100% !important; }
+    .project-visual img { max-width:90%; }
+    .project-details h3 { font-size:1.5rem; }
+    .project-details p { font-size:0.9rem; }
+
+    /* Experience */
+    .experience-grid { grid-template-columns:1fr; row-gap:30px; }
+    .circle-year { min-width:80px; height:80px; font-size:1rem; margin-bottom:10px; }
+    .details h3 { font-size:1.2rem; }
+    .details p { font-size:0.9rem; }
+
+    /* Achievements */
+    .cards-wrapper { flex-direction:column; gap:20px; margin-top:-60px; }
+
+    /* Events */
+    .events-grid { grid-template-columns:1fr; gap:20px; }
+    .event-card { padding:30px 20px; }
+
+    /* Testimonials */
+    .testimonial-item { flex-direction:column; text-align:center; gap:20px; }
+    .speech-bubble { padding:25px 20px; }
+    .user-avatar { width:100px; height:100px; }
+    .user-name { font-size:1rem; }
+
+    /* Contact */
+    .contact-wrapper { flex-direction:column; gap:20px; margin-top:-60px; }
+    .contact-left, .contact-right { padding:30px 20px; }
+}
+</style>
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#hero">AW</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto align-items-center">
+
+<li class="nav-item">
+<a class="nav-link" href="#">About me</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Experience</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Events</a>
+</li>
+
+<li class="nav-item d-flex">
+
+<a class="social-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+
+<a class="social-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+<a class="social-link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+<section class="hero d-flex align-items-center"id="hero">
+
+<div class="container text-center">
+
+<h6 class="name">Alex Williams</h6>
+<p>I’m a full-stack developer with great experience and passion for coding and building plain interfaces. I have a manic love for great high-loaded projects. Plus, I’m an easy-going person and fit in any team. I work remotely and save your budget on my workplace. So, if you have a complicated task, you’ve found the right person. </p>
+<img class="imgp" src="boy.pic-removebg-preview.png" alt="">
+</div>
+
+</section>
+
+
+<section class="purple-bg" id="skills">
+        <div class="container">
+            <h2 class="fw-bold">Skills</h2>
+        </div>
+    </section>
+
+    <section class="cards-container">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-diagram-3 icon"></i>
+                        <h4 class="fw-bold">Back-end</h4>
+                        <p class="text-muted">Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
+                        <span class="purple-text">Languages:</span>
+                        <p>PHP, Python, Ruby</p>
+                        <span class="purple-text">My Tools:</span>
+                        <p>Yii <br>Symfony <br>MySQL <br>Node JS<br>PostgreSQL</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-code-slash icon"></i>
+                        <h4 class="fw-bold">Front-end</h4>
+                        <p class="text-muted">I code things from scratch, and gracefully bring the ideas to life and to the bowser, paying maximal attention to your vision of the product.</p>
+                        <span class="purple-text">Tech Stack:</span>
+                        <p>HTML, JS, CSS, Sass</p>
+                        
+                        <span class="purple-text">My Tools:</span>
+                        <p>Bootstrap <br>AJAX <br>AngularJS/ReactJS<br>Github<br>Atom</p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="bi bi-bezier2 icon"></i>
+                        <h4 class="fw-bold">Designer</h4>
+                        <p class="text-muted">I create simple, complex, and detailed prototypes for all platforms.</p>
+                        <span class="purple-text">Things I Do:</span>
+                        <p>UX, UI, Web, Apps</p>
+                        <span class="purple-text">My Tools:</span>
+                        <p>Figma <br>Sketch <br>InVision<br>Origami<br>Axure</p>
+                    </div>
+                    
+                
+                </div>
+        </div>
+    </section>
+<section class="text-center my-5">
+    <button type="button" class="btn btn-primary px-4 py-2 shadow-sm" style="border-radius: 10px; font-weight: 500;">
+       Here is my CV
+    </button>
+</section>
+<section class="project" style="display: flex;
+        flex-direction: column; /* ترتيب العناصر عمودياً */
+        align-items: center;    /* توسيط العناصر أفقيًا */
+        text-align: center;     /* توسيط النص نفسه */
+        padding: 60px 0;">
+    <h2 style="font-size: 2.5rem;margin-bottom: 15px;color: #333";>Projects</h2>
+    <p style="color: #777;max-width: 600px">Have a look at some of the rolled-out projects I'm proud of:</p>
+</section>
+
+
+
+<section class="projects-section" id="projects-section">
+    <div class="project-row">
+        <div class="project-visual" style="background-color: #FFD241;border-radius:10px; width:400px ;">
+            <img src="line1pic.jpg" alt="WowTaxi">
+        </div>
+        <br>
+        <div class="project-details" style="border-bottom: 5px solid #FFD241;">
+            <h3 style="color: #FFD241;">WowTaxi</h3>
+            <p>UX design of the WowTaxi company's website, iOS and Android apps by creating easy-to-use and plain user experience for the customers.</p>
+            <a href="#" class="project-link">View project</a>
+        </div>
+    </div>
+<br>
+    <div class="project-row flex-reverse">
+        <div class="project-visual" style="background-color: #524dff;">
+            <img src="line2pic.jpg" alt="Block Expert">
+        </div>
+        <div class="project-details" style="border-bottom: 5px solid #524dff;">
+            <h3 style="color: 524dff; ">Block Expert</h3>
+            <p>Server side authentication web application, primary double spend protecting (language: nodeJS, database: levelDB), development of MVP with consensus and distributed ledger (via p2p).</p>
+            <a href="#" class="project-link">View project</a>
+        </div>
+    </div>
+<br>
+    <div class="project-row">
+        <div class="project-visual" style="background-color: #ff3e59;">
+            <img src="line3pic.jpg" alt="PayBox">
+        </div>
+        <div class="project-details" style="border-bottom: 5px solid #ff3e59;">
+            <h3 style="color: #ff3e59;">PayBox</h3>
+            <p>Built a scalable, fault-tolerant architecture solution for a MESOS-based web server. Processing design, development and implementation.</p>
+            <a href="#" class="project-link">View project</a>
+        </div>
+    </div>
+<br>
+<br>
+    
+<section style="background-color: #4B30E5;width: 100vw;         
+    left: 50%;
+    right: 50%;
+    margin-left: -15vw;  
+    padding: 100px 0;      
+    text-align: center;
+    color: white;" > 
+    <div style="max-width: 800px; margin: 0 auto;padding: 0 20px;">
+        <h1 >Interested in working together?</h1>
+        <p >
+            You can trust your project in my expert hands.
+            I'm always eager to do something nice<br>  and complicated. Let's discuss all the features in a private conversation.
+        </p>
+    </div>
+</section>
+<section class="experience-wrapper" id="Experience" >
+    <h2 class="main-title">Experience</h2>
+    
+    <div class="experience-grid">
+        <div class="experience-item">
+            <div class="circle-year">2015</div>
+            <div class="details">
+                <h3>MIT</h3>
+                <p>Undergraduate Project in Computer Science and Engineering, A+</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="circle-year">2015</div>
+            <div class="details">
+                <h3>University of Boston</h3>
+                <p>Bachelor of Science in Computer Science. Courses in programming languages, compiler design, data structures, algorithms, data structures, theory of computation.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="circle-year">2016</div>
+            <div class="details">
+                <h3>DoeWeb</h3>
+                <p>Software Development Intern in a US IT company. Used AngularJS, PHP, and basic frameworks.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="circle-year">2017</div>
+            <div class="details">
+                <h3>WebLook</h3>
+                <p>Full-Stack developer at WebLook web development agency in SF. Created and maintained websites and mobile apps for clients ranging from small businesses to enterprise corporations.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="circle-year">2015</div>
+            <div class="details">
+                <h3>DiveNet</h3>
+                <p>Backend developer in a SF hardware startup creating smart equipment for divers. Used Node JS and PostgreSQL, and worked in tight bundle with engineers and security specialists.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="circle-year">2015</div>
+            <div class="details">
+                <h3>Remote Freelancer</h3>
+                <p>Having gained a lot of experience in previous jobs, I decided to become a freelancer. Since 2018, I have been collaborating with various companies around the world, working as a UI/UX designer and full-stack developer growing the most complex projects from scratch.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="achievements-header">
+    <h2>Achievements</h2>
+</section>
+
+<div class="cards-wrapper">
+    <div class="achievement-card">
+        <i class="bi bi-trophy"></i>
+        <h3>DoeWeb</h3>
+        <p><strong>Employee of the month.</strong> Though I was only an intern, I was highly praised at work.</p>
+    </div>
+
+    <div class="achievement-card">
+        <i class="bi bi-display"></i>
+        <h3>Hackathon</h3>
+        <p><strong>DeveloperWeek NYC 2018.</strong> This was an incredible experience creating the whole project.</p>
+    </div>
+
+    <div class="achievement-card">
+        <i class="bi bi-award"></i>
+        <h3>Awwwards</h3>
+        <p><strong>Honorable mention.</strong> Being noticed means much to me and my client.</p>
+    </div>
+
+    <div class="achievement-card">
+        <i class="bi bi-graph-up-arrow"></i>
+        <h3>Web Summit</h3>
+        <p><strong>Speaker.</strong> Speaking at Web Summit is stunning and inspiring.</p>
+    </div>
+</div>
+
+
+
+
+
+
+<section class="events-section" id="Events">
+    <div class="events-header">
+        <h2>Events With Me</h2>
+        <p>I regularly take part in talks, forums, conferences and panel discussions to share experience, communicate with colleagues and find new opportunities. So you can always say hi!</p>
+    </div>
+
+    <div class="events-grid">
+        <div class="event-card">
+            <span class="event-type">Conference</span>
+            <h3>WebDev Conference</h3>
+            <div class="event-date">05 July Friday</div>
+            <p class="event-location">Global Arena, San Francisco<br>09:00 - 18:00</p>
+            <a href="#" class="btn-attend">Attend Event</a>
+        </div>
+
+        <div class="event-card">
+            <span class="event-type">Panel Discussion</span>
+            <h3>Backend Security Issues</h3>
+            <div class="event-date">20 July Saturday</div>
+            <p class="event-location">Central Hyde Gallery, Brooklyn, NY<br>10:30 - 14:00</p>
+            <a href="#" class="btn-attend">Attend Event</a>
+        </div>
+
+        <div class="event-card">
+            <span class="event-type">Workshop</span>
+            <h3>UX Workshop</h3>
+            <div class="event-date">14 August Wednesday</div>
+            <p class="event-location">Fellows Riverside Garden, Columbus<br>19:00 - 21:30</p>
+            <a href="#" class="btn-attend">Attend Event</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="testimonials-section">
+    <h2 class="main-title">Warm Words From My Collegues</h2>
+
+    <div class="testimonial-container">
+        <div class="testimonial-item">
+            <div class="user-info">
+                <img src="freed.jpg" alt="Fred M." class="user-avatar">
+                <h4 class="user-name">Fred M.</h4>
+                <p class="user-role">Team Lead, DoeWeb</p>
+            </div>
+            <div class="speech-bubble">
+                <p>Alex is a really talented guy with strong knowledge in different web development areas. He likes complicated tasks and enjoys solving them. Under my mentoring, Alex quickly became a strong middle developer, so I am proud of his success. I wish Alex all the best and further rapid development!</p>
+            </div>
+        </div>
+
+        <div class="testimonial-item">
+            <div class="user-info">
+                <img src="jessica.jpg" alt="Jessica K." class="user-avatar">
+                <h4 class="user-name">Jessica K.</h4>
+                <p class="user-role">Tech Lead, WebLook</p>
+            </div>
+            <div class="speech-bubble">
+                <p>Alex loves what he does, and it's a great quality for a full-stack developer. All of our clients are totally satisfied with the sites developed by Alex. When we need some extra modifications we still work with Alex though he has left us for remote work. Anyway, he is a great guy, real professional and a team-player.</p>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <div class="user-info">
+                <img src="jhon.jpg" alt="John W." class="user-avatar">
+                <h4 class="user-name">Jessica K.</h4>
+                <p class="user-role">Tech Lead, WebLook</p>
+            </div>
+            <div class="speech-bubble">
+                <p>Creating a UX design from scratch is not an easy work, especially in terms working with a startup, as everything is changing every day :) Still, Alex was very comprehensive and understanding, he did a great work and saved our budget. Totally recommend!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-footer">
+
+<div class="contact-wrapper">
+
+<div class="contact-left">
+<h2>Any Propositions?</h2>
+<p>Complete the form below and let's have a talk on your project!</p>
+</div>
+
+<div class="contact-right">
+<input type="text" placeholder="Name" required>
+<input type="text" placeholder="Phone number" required>
+
+<button>Start Conversation</button>
+</div>
+
+</div>
+
+
+<footer class="purple-footer">
+
+<div class="footer-content">
+
+<h2 class="footer-name">Alex Williams</h2>
+
+<nav class="footer-links">
+<a href="#">About me</a>
+<a href="#skills">Skills</a>
+<a href="#projects-section">Projects</a>
+<a href="#Experience">Experience</a>
+<a href="#Events">Events</a>
+</nav>
+
+<div class="social-icons">
+<a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+<a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+</div>
+
+</div>
+<div class="footer-copyright">
+    <p>© Created by Alex Williams     <span style="margin-left: 40px;">  All rights Reserved</span></p>
+</div>
+
+</footer>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
